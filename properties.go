@@ -1,5 +1,10 @@
 package properties
 
+// +----------------------------------------------------------------------
+// | properties [ Golang read the properties file ]
+// +----------------------------------------------------------------------
+// | Author: lemontea <36634584@qq.com> <https://github.com/admin100>
+// +----------------------------------------------------------------------
 import (
 	"bufio"
 	"os"
@@ -11,6 +16,7 @@ type properties struct {
 	maps map[string]string
 }
 
+//Loading the properties file into memory
 func Load(file string) (*properties, error) {
 	f, err := os.Open("db.properties")
 	if err != nil {
@@ -36,6 +42,7 @@ func Load(file string) (*properties, error) {
 	return &prop, scanner.Err()
 }
 
+//According to the key to return to the corresponding value
 func (p *properties) Get(key string) string {
 	return p.maps[key]
 }
