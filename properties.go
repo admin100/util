@@ -18,7 +18,7 @@ type properties struct {
 
 //Loading the properties file into memory
 func Load(file string) (*properties, error) {
-	f, err := os.Open("db.properties")
+	f, err := os.Open(file)
 	if err != nil {
 		return nil, err
 	}
