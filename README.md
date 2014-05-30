@@ -1,21 +1,19 @@
-properties
+util
 ==========
 
-Golang读取properties文件，根据key返回对应的value。  
+Golang的util包，提供一些常用的方法集合。  
 
 Features
 ==========
 
- - 非常方便的文件加载方式，只要传入文件名即可
- - 提供Get方法，快速的value获取
+ - 通过console可以设置windows console的title
+ - 使用properties解析*.properties文件
 
 Document
 =========
 
-func Load(file string) (*properties, error)   
-type properties   
-　　func (p *properties) Get(key string) string  
-具体使用方式，请参照 [properties_test.go][1]
+- [console][1]
+- [properties][2]
 
 
 LICENSE
@@ -24,4 +22,5 @@ LICENSE
 properties is licensed under the Apache Licence, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
-  [1]: https://github.com/admin100/properties/blob/master/properties_test.go
+  [1]: https://github.com/admin100/util/tree/master/console
+  [2]: https://github.com/admin100/util/tree/master/properties

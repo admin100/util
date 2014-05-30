@@ -24,4 +24,4 @@ LICENSE
 properties is licensed under the Apache Licence, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
-  [1]: https://github.com/admin100/properties/blob/master/properties_test.go
+  [1]: https://github.com/admin100/util/blob/master/properties/properties_test.go
