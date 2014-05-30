@@ -14,6 +14,10 @@ Document
 func SetConsoleTitle(title string) (int, error)  
 具体使用方式，请参照 [console_test.go][1]
 
+Install
+==========
+
+    go get github.com/admin100/util/console
 
 LICENSE
 ==========

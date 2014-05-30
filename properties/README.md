@@ -17,6 +17,10 @@ type properties
 　　func (p *properties) Get(key string) string  
 具体使用方式，请参照 [properties_test.go][1]
 
+Install
+==========
+
+    go get github.com/admin100/util/properties
 
 LICENSE
 ==========
